@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Vault | Crypto intelligence</title>
+    <link href="https://fonts.googlrapis.com/css2?
+    family=Orbitron:wght@400;700&family=Inter:wght@300;500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="dashborad-container">
+
+        <nav class="sidebar">
+            <div class="logo-section">
+                <i data-lucide="zap" class="neon-blade"></i>
+                <h1>CRYPTO</h1>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <i data-lucide="layout-dashborad"></i> <span>Dashboard</span>
+                </li>
+                <li class="nav-item">
+                    <i data-lucide="wallet"></i> <span>Minha Carteira</span>
+                </li>
+                <li class="nav-item">
+                    <i data-lucide="bar-chart-3"></i> <span>Mercado</span>
+                </li>
+                <li class="nav-item">
+                    <i data-lucide="settings"></i> <span>Configurções</span>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Pesquisar criptoativo...">
+                </div>
+
+                <div class="balance-card">
+                    <p>SALDO TOTAL</p>
+                    <h2 id="total-balance">R$ 0,00</h2>
+                </div>
+            </header>
+
+            <section class="crypto-grid" id="crypto-grid">
+                <div class="coin-card">
+                    <div class="coin-info">
+                        <h3>BITCOIN</h3>
+                        <span class="badge-up">+2.5%</span>
+                    </div>
+                    <div class="coin-price">R$ 540.230,00</div>
+                    <div class="sparkline-placeholder">Aguardando dados...</div>
+                </div>
+
+                <div class="coin-card">
+                    <div class="coin-info">
+                        <h3>ETHEREUM</h3>
+                        <span class="badge-donw">-1.2%</span>
+                    </div>
+                    <div class="coin-price">R$ 18.120,00</div>
+                    <div class="sparkline-placeholder">Aguardando dados...</div>
+                </div>
+            </section>
+
+            <section class="main-chart-area">
+                <div class="chart-header">
+                    <h3>Analise de Tendência</h3>
+                </div>
+                <div class="chart-container">
+                    <p class="placeholder-text">Grafico de desempenho em tempo real</p>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
